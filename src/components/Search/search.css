@@ -1,5 +1,28 @@
 .search-box {
     display: flex;
     justify-content: center;
-    margin: 4rem auto;
+}
+
+button {
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    outline: none;
+    margin: 0 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
+    margin: 2rem;
+}
+
+.message {
+    color: #6644af;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
 }

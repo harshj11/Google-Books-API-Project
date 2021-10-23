@@ -2,10 +2,10 @@
     background-color: #664aff;
     border-radius: 50%;
     color: #fff;
+    display: inline-block;
     height: 2.75rem;
     width: 2.75rem;
     line-height: 2.75rem;
-    margin: 0 1rem;
 }
 
 .icon:hover {

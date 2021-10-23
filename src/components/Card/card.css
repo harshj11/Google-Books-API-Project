@@ -1,0 +1,130 @@
+.card {
+    border: 1px solid #664aff;
+    border-radius: 1rem;
+    box-shadow: 0 0.1875rem 0.75rem rgb(0 0 0 / 15%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    transition: transform 350ms ease;
+    width: 20rem;
+    z-index: 1;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card::after {
+    content: "";
+    background-color: #664aff;
+    border-radius: 1rem;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 1000ms ease;
+    z-index: 3;
+}
+
+.card:hover::after {
+    border: none;
+    bottom: 100%;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card-header h2 {
+    color: #000;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.card-header img {
+    height: 7rem;
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.card-header img:hover {
+    transform: scale(1.05);
+}
+
+.card-header-info a {
+    background-color: #664aff;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 0.7rem 0.8rem;
+    text-decoration: none;
+}
+
+.card-header-info a:hover {
+    background-color: #000;
+}
+
+.card-footer p {
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.card-curtain {
+    animation: curtain;
+    animation-duration: 1s;
+    color: #fff;;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top:10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.card-curtain.inactive {
+    display: none;
+}
+
+.card-curtain h2 {
+    display: inline;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.card-curtain span {
+    display: block;
+    letter-spacing: 1.5px;
+}
+
+@keyframes curtain {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+        display: block;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
