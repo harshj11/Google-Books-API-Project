@@ -1,0 +1,54 @@
+.input-container {
+    position: relative;
+    width: 300px;
+}
+
+input{
+    border: none;
+    color: #664aff;
+    font-size: 1.125rem;
+    outline: none;
+    padding-top: 1.25rem;
+    width: 100%;
+}
+
+.input-label {
+    border-bottom: solid 1px #000;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.input-label::after {
+    content: '';
+    border-bottom: 3px solid #664aff;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.label-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+input:focus + .input-label .label-name,
+input:valid + .input-label .label-name {
+    color: #664aff;
+    font-size: 0.875rem;
+    transform: translateY(-150%);
+}
+
+input:focus + .input-label::after,
+input:valid + .input-label::after {
+    width: 100%;
+}
