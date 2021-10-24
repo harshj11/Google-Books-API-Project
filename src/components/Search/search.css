@@ -11,14 +11,6 @@ button {
     margin: 0 1rem;
 }
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    row-gap: 2rem;
-    margin: 2rem;
-}
-
 .message {
     color: #6644af;
     display: block;
