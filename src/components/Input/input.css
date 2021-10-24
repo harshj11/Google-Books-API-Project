@@ -52,3 +52,10 @@ input:focus + .input-label::after,
 input:valid + .input-label::after {
     width: 100%;
 }
+
+@media only screen and (max-width: 425px) {
+    .input-container {
+        margin-left: 0.625rem;
+        width: 70%;
+    }
+}

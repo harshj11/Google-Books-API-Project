@@ -105,6 +105,15 @@
     letter-spacing: 1.5px;
 }
 
+/* card-container style (for a div present in Cards.jsx) */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
+    margin: 2rem;
+}
+
 @keyframes curtain {
     0% {
         opacity: 0;
@@ -126,5 +135,23 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);     
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);     
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .card {
+        width: 16rem;
     }
 }
