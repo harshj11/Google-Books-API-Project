@@ -7,6 +7,10 @@ const Link = ({ className, href, children }) => {
         event.preventDefault();
         //Update URL
         window.history.pushState({}, "", href)
+
+        // communicate to Routes that URL has changed
+        const navEvent = new PopStateEvent('popstate');
+        window.dispatchEvent(navEvent);
     }
 
     return (
