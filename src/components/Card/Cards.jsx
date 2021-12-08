@@ -6,7 +6,8 @@ const Cards = (props) => {
 
     return (
         <div className="card-container">
-            {
+            {   
+                //Rendering a book's details in each card
                 cardData.map(data => {
                     return <Card key={data.id} details={data.volumeInfo} />
                 })

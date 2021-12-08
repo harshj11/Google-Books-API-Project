@@ -1,11 +1,17 @@
 import './navbar.css'
+import '../Link/Link'
+import Link from '../Link/Link';
 
 const Navbar = () => {
     return (
         <header>
             <nav className="nav">
-                <a className="logo" href="/">Search a Book</a>
-                <a className="menu-item" href="/about">About</a>
+                <Link href="/" className="logo">
+                    Search a Book
+                </Link>
+                <Link href="/about" className="menu-item">
+                    About
+                </Link>
             </nav>
         </header>
     );

@@ -1,0 +1,19 @@
+a {
+    color: #000;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.75rem;
+}
+
+.menu-item {
+    font-size: 1.25rem;
+}
+
+a:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}

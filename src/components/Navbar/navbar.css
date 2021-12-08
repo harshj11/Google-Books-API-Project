@@ -5,24 +5,3 @@
     height: 64px;
     justify-content: space-around;
 }
-
-.nav a {
-    color: #000;
-    opacity: 0.5;
-    text-decoration: none;
-}
-
-.nav .logo {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.75rem;
-}
-
-.nav .menu-item {
-    font-size: 1.25rem;
-}
-
-.nav a:hover, .nav ul:hover {
-    opacity: 0.75;
-    cursor: pointer;
-}
-
