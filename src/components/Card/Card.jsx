@@ -18,6 +18,7 @@ const Card = (props) => {
 
     return (
         <div className="card" onMouseOver={handleMouseOver} onMouseOut={handleMouseOver}>
+            {/* an absolutely positioned div, hovering on which curtain effect will be shown */}
             <div className={isMousedOver ? "card-curtain inactive" : "card-curtain"}>
                 <div>
                     <Icon type={faBook} />
@@ -34,6 +35,7 @@ const Card = (props) => {
                     }
                 </div>
             </div>
+            {/* details about the specific book */}
             <div className="card-header">
                 <img src={details.imageLinks ? details.imageLinks.thumbnail : ""} alt="No Preview Available" />
                 <div className="card-header-info">
