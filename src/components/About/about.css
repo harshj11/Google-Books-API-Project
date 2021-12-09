@@ -26,3 +26,17 @@
     color: #664aff;
     opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+    .about {
+        width: 20rem;
+    }
+
+    .about-project {
+        font-size: 1.2rem;
+    }
+
+    .check-code, .suggestion {
+        font-size: 1rem;
+    }
+}
