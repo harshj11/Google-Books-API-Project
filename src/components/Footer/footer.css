@@ -1,0 +1,13 @@
+.footer {
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.link {
+    opacity: 1;
+}

@@ -10,7 +10,7 @@ const Pagination = (props) => {
     }
 
     return(
-        <div className="box">
+        <div className="pagination-container">
             {
                 pageNumbers.map(pageNumber => {
                     return (
