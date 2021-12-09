@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./input.css";
 
 const Input = (props) => {
-    const [inputValue, setInputValue] = useState("")
+    const [inputValue, setInputValue] = useState('')
 
     useEffect(() => {
         props.handleSearchText(inputValue);
