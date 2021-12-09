@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./input.css";
 
 const Input = (props) => {
-    const [inputValue, setInputValue] = useState('')
+    const [inputValue, setInputValue] = useState("")
 
     useEffect(() => {
         props.handleSearchText(inputValue);
@@ -15,7 +15,7 @@ const Input = (props) => {
     return (
         <div className="input-container">
             <input type={props.type} name="input-text" onChange={handleChange} required/>
-            <label for="input-text" className="input-label">
+            <label htmlFor="input-text" className="input-label">
                 <span className="label-name">Search a Book</span>
             </label>
         </div>
