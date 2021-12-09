@@ -1,0 +1,28 @@
+.about {
+    margin: 4rem auto;
+    text-align: justify;
+    width: 30rem;
+}
+
+.book-icon {
+    color: #664aff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.fa-icon:hover {
+    cursor: pointer;
+}
+
+.about-project {
+    font-size: 1.4rem;
+}
+
+.check-code, .suggestion {
+    font-size: 1.2rem;
+}
+
+.repo-link {
+    color: #664aff;
+    opacity: 1;
+}

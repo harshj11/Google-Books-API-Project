@@ -1,4 +1,5 @@
 import './App.css';
+import About from './components/About/About';
 import { Navbar, Search } from './components/index';
 import Route from './Route';
 
@@ -10,9 +11,8 @@ function App() {
         <Search />
       </Route>
       <Route path="/about">
-        Hello
+        <About />
       </Route>
-      
     </div>
   );
 }
