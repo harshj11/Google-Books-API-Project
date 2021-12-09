@@ -1,7 +1,7 @@
 import "./pagination.css";
 
 const Pagination = (props) => {
-    const{cardsPerPage, totalCards, paginate, currentPageNumber} = props;
+    const {cardsPerPage, totalCards, paginate, currentPageNumber} = props;
     
     const pageNumbers = [];
 
@@ -20,6 +20,7 @@ const Pagination = (props) => {
                                         window.scrollTo(0, 0)
                                     }} 
                             className={pageNumber === currentPageNumber ? "page-button active" : "page-button"}
+                            key={pageNumber}
                         >{pageNumber}</button>
                     )
                 })
