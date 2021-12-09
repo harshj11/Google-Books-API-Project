@@ -1,6 +1,7 @@
 ## Search a Book : Search for any book you want
 
 The Search a Book project uses the Google Books API to search and display the books based on the text entered by the user.
+See it live: https://trusting-swirles-5bb26f.netlify.app/
 
 ## Project Screenshots
 
